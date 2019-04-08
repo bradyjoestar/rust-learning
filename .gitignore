@@ -1,6 +1,5 @@
 /target
 **/*.rs.bk
-bin
 *.iml
 .idea
 default.etcd
