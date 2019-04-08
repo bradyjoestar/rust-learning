@@ -1,0 +1,16 @@
+[package]
+name = "tiwenbin"
+version = "0.1.0"
+authors = ["doug <linderd@iinet.net.au>"]
+
+
+[[bin]]
+name = "cargo_ctl"
+
+[[bin]]
+name = "main"
+
+[[bin]]
+name = "thread_demo"
+
+[dependencies]
