@@ -8,9 +8,17 @@ authors = ["doug <linderd@iinet.net.au>"]
 name = "cargo_ctl"
 
 [[bin]]
-name = "main"
+name = "rust_learn"
 
 [[bin]]
 name = "thread_demo"
+
+[[bin]]
+name = "tiwenbin"
+path = "src/main.rs"
+
+[[bin]]
+name = "bin-test"
+path = "src/binary/bin_test.rs"
 
 [dependencies]
