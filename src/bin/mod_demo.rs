@@ -1,5 +1,5 @@
-use tiwenbin::module3::module4;
-use tiwenbin::module3::blah2;
+use tiwenbin::mod_demo::module3::module4;
+use tiwenbin::mod_demo::module3::blah2;
 
 #[macro_use]
 extern crate tiwenbin;
@@ -12,5 +12,5 @@ fn main() {
   say_hello!();
 
   println!("{}","blah2Doit start");
-  blah2::blah2Doit();
+  blah2::blah2_doit();
 }

@@ -1,6 +1,6 @@
-use module3::blah;
-use module1;
-use module2;
+use mod_demo::module3::blah;
+use mod_demo::module1;
+use mod_demo::module2;
 
 
 pub fn doit() {
