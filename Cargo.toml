@@ -8,7 +8,7 @@ authors = ["doug <linderd@iinet.net.au>"]
 name = "cargo_ctl"
 
 [[bin]]
-name = "rust_learn"
+name = "mod_demo"
 
 [[bin]]
 name = "thread_demo"
