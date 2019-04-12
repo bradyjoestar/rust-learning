@@ -3,6 +3,5 @@ extern crate tiwenbin;
 
 fn main(){
     let value = fmt!(100);
-    println!("{:?}", value);
-    println!("{}","ctl")
+    println!("{}",value);
 }

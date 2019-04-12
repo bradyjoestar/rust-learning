@@ -5,7 +5,10 @@ authors = ["doug <linderd@iinet.net.au>"]
 
 
 [[bin]]
-name = "cargo_ctl"
+name = "base_language_demo"
+
+[[bin]]
+name = "ownership_demo"
 
 [[bin]]
 name = "mod_demo"
