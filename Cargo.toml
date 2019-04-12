@@ -17,6 +17,9 @@ name = "mod_demo"
 name = "thread_demo"
 
 [[bin]]
+name = "webserver_demo"
+
+[[bin]]
 name = "tiwenbin"
 path = "src/main.rs"
 
