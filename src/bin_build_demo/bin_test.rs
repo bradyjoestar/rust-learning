@@ -1,7 +1,7 @@
 #[macro_use]
 extern crate tiwenbin;
 
-fn main(){
-    println!("{}","wenbin");
+fn main() {
+    println!("{}", "wenbin");
     say_hello!()
 }
