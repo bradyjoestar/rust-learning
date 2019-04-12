@@ -8,6 +8,8 @@ mod macros_demo;
 
 pub mod mod_demo;
 
+pub mod base_language_demo;
+
 pub fn lib(){
     say_hello!();
 }
