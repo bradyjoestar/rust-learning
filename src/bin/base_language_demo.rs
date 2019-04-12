@@ -11,8 +11,10 @@ fn main() {
 
     tuple_array::array();
 
-    let func_result = function::func_test(100, 200);
+    let func_result = function::func_mult_return(100, 200);
 
     println!("func result value 1: {}", func_result.0);
     println!("func result value 2: {}", func_result.1);
+
+    function::for_func();
 }
