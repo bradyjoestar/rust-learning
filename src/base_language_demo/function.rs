@@ -16,7 +16,7 @@ pub fn for_func() {
     }
 
     // a[1..4] is a slice
-    for element in a[1..4].iter(){
+    for element in a[1..4].iter() {
         println!("the value of loop2 is: {}", element);
     }
 
