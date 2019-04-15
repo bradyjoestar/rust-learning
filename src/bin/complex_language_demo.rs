@@ -1,4 +1,6 @@
-use tiwenbin::complex_language_demo::{collection_demo, enum_demo, struct_simple_demo};
+use tiwenbin::complex_language_demo::{
+    collection_demo, enum_demo, panic_result_test, struct_simple_demo,
+};
 
 extern crate tiwenbin;
 
@@ -20,4 +22,8 @@ fn main() {
     collection_demo::vec_push_test();
 
     collection_demo::hashmap_test();
+
+    panic_result_test::test1();
+
+    panic_result_test::test2();
 }
