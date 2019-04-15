@@ -6,4 +6,6 @@ fn main() {
     println!("{}", "complex language demo");
 
     struct_simple_demo::build_demo();
+
+    struct_simple_demo::compute_area_test();
 }
