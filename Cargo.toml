@@ -8,6 +8,9 @@ authors = ["doug <linderd@iinet.net.au>"]
 name = "base_language_demo"
 
 [[bin]]
+name = "complex_language_demo"
+
+[[bin]]
 name = "ownership_demo"
 
 [[bin]]

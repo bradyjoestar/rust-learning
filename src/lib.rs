@@ -9,6 +9,8 @@ pub mod mod_demo;
 
 pub mod base_language_demo;
 
+pub mod complex_language_demo;
+
 pub mod ownership_demo;
 
 pub fn lib() {
