@@ -10,4 +10,6 @@ fn main() {
     simple_ownership_demo::simple_test();
 
     simple_ownership_demo::ref_test();
+
+    simple_ownership_demo::clone_copy_test();
 }
