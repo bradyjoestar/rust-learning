@@ -7,7 +7,7 @@ fn main() {
     let value = fmt!(100);
     println!("{}", value);
 
-    simple_ownership_demo::simple_test();
+    simple_ownership_demo::simple_borrow_test();
 
     simple_ownership_demo::ref_test();
 
