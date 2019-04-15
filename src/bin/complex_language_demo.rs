@@ -18,4 +18,6 @@ fn main() {
     collection_demo::enum_vec_test();
 
     collection_demo::vec_push_test();
+
+    collection_demo::hashmap_test();
 }
