@@ -9,6 +9,8 @@ pub fn simple_borrow_test() {
 
     let mut s3 = String::from("hello");
 
+    let test = "test"; //test is a &str type
+
     {
         let mut s4 = &s3; // &s3 是一个不可变引用
                           // &s3 is immutable, we can't change s3 value by s4.
