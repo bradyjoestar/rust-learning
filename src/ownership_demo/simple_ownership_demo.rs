@@ -9,7 +9,10 @@ pub fn simple_borrow_test() {
 
     let mut s3 = String::from("hello");
 
-    let test = "test"; //test is a &str type
+    let test = "test";
+    //test is a &str type
+    //String::from create a String type
+    //&String is reference of String type
 
     {
         let mut s4 = &s3; // &s3 是一个不可变引用
