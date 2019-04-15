@@ -46,14 +46,6 @@ pub fn simple_borrow_test() {
     println!("{}", "-------------------------------");
 }
 
-pub fn ref_test() {
-    println!("{}", "-------------------------------");
-    let s1 = String::from("hello");
-    let s2 = &s1;
-    println!("{} ,{} reference test", s1, s2);
-    println!("{}", "-------------------------------");
-}
-
 pub fn clone_copy_test() {
     //Cloning is an explicit action, x.clone().
     println!("{}", "-------------------------------");

@@ -1,4 +1,4 @@
-use tiwenbin::ownership_demo::simple_ownership_demo;
+use tiwenbin::ownership_demo::{complex_ownership_demo, simple_ownership_demo};
 
 #[macro_use]
 extern crate tiwenbin;
@@ -9,7 +9,9 @@ fn main() {
 
     simple_ownership_demo::simple_borrow_test();
 
-    simple_ownership_demo::ref_test();
-
     simple_ownership_demo::clone_copy_test();
+
+    complex_ownership_demo::borrow_func_test();
+
+    complex_ownership_demo::slice_test();
 }
