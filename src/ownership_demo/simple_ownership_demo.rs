@@ -13,3 +13,12 @@ pub fn simple_test() {
     println!("{} ,{} test clone", s1, s2);
     println!("{}", "-------------------------------");
 }
+
+
+pub fn ref_test(){
+    println!("{}", "-------------------------------");
+    let s1 = String::from("hello");
+    let s2 = &s1;
+    println!("{} ,{} reference test", s1, s2);
+    println!("{}", "-------------------------------");
+}
