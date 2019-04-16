@@ -15,6 +15,8 @@ pub mod ownership_demo;
 
 pub mod closure_iterator_demo;
 
+pub mod smart_pointer_demo;
+
 pub fn lib() {
     say_hello!();
 }

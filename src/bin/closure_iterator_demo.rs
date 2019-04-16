@@ -15,4 +15,6 @@ fn main() {
     closure_test::generic_closure_test();
 
     closure_test::closure_environment_demo();
+
+    closure_test::closure_trait_demo();
 }
