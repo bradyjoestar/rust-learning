@@ -14,6 +14,12 @@ name = "complex_language_demo"
 name = "ownership_demo"
 
 [[bin]]
+name = "closure_iterator_demo"
+
+[[bin]]
+name = "smart_pointer_demo"
+
+[[bin]]
 name = "mod_demo"
 
 [[bin]]
