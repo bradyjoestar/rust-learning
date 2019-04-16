@@ -13,6 +13,8 @@ pub mod complex_language_demo;
 
 pub mod ownership_demo;
 
+pub mod closure_iterator_demo;
+
 pub fn lib() {
     say_hello!();
 }

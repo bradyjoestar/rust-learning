@@ -45,5 +45,4 @@ pub fn lifetime_self_demo() {
     let str3 = String::from("wenbin").as_str();
     println!("{}",str3);
     */
-
 }
