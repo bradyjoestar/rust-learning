@@ -1,7 +1,8 @@
 use tiwenbin::complex_language_demo::trait_simple_demo::Summary;
 use tiwenbin::complex_language_demo::{
-    collection_demo, enum_demo, generic_demo, panic_result_test, struct_simple_demo,
-    trait_complex_demo, trait_simple_demo,
+    collection_demo, enum_demo, generic_demo, lifetime_complex_demo, lifetime_self_demo,
+    lifetime_simple_demo, panic_result_test, struct_simple_demo, trait_complex_demo,
+    trait_simple_demo,
 };
 
 pub struct Tweet {
@@ -59,6 +60,12 @@ fn main() {
     trait_complex_demo::trait_bound_test();
 
     trait_complex_demo::pair_bound_test();
+
+    lifetime_complex_demo::lifetime_complex_test();
+
+    lifetime_simple_demo::lifetime_simple_test();
+
+    lifetime_self_demo::lifetime_self_demo();
 }
 
 fn extern_trait() {

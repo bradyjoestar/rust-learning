@@ -90,7 +90,7 @@ pub fn andstr_test() {
     // cannot borrow `a` as immutable because it is also borrowed as mutable
     //println!("{},{}", a, c)
 
-    let mut a = 10;
+    let a = 10;
 
     let c = &a;
 
