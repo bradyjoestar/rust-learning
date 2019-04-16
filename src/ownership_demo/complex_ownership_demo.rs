@@ -31,8 +31,8 @@ pub fn slice_test() {
     println!("world_slice value is: {}", world);
 
     // string slice is unmutable
-    let mut s = String::from("slice");
-    let mut slice = &s[0..3];
+    let s = String::from("slice");
+    let slice = &s[0..3];
     println!("slice value is: {}", slice);
 
     // array slice is mutable
@@ -49,4 +49,52 @@ pub fn slice_test() {
     println!("a[1] value is:{}", a[1]);
 
     println!("{}", "-----------slice test end  --------------------");
+}
+
+// &str
+pub fn andstr_test() {
+    println!("{}", "----------and str end  --------------------");
+    //This will not report error
+    let mut s = "generic";
+
+    let mut s4 = s;
+
+    let mut s5 = s;
+
+    println!("{},{},{}", s4, s, s5);
+
+    s = "_generic";
+
+    s4 = "gene_ric";
+
+    s5 = "generic_";
+
+    println!("{},{},{}", s4, s, s5);
+
+    let strtest = String::from("andstr");
+
+    let strtest2 = &strtest;
+
+    let strtest3 = strtest2;
+
+    let strtest4 = strtest2;
+
+    println!("{},{},{},{}", strtest, strtest2, strtest3, strtest4);
+
+    let mut a = 5;
+
+    let c = &mut a;
+
+    *c = 4;
+
+    // cannot borrow `a` as immutable because it is also borrowed as mutable
+    //println!("{},{}", a, c)
+
+    let mut a = 10;
+
+    let c = &a;
+
+    //cannot assign to `a` because it is borrowed
+    //assignment to borrowed `a` occurs here
+    // a = 100;
 }

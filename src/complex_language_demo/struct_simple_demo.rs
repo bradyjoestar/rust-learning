@@ -11,6 +11,9 @@ pub fn build_demo() {
     println!("{}", user.email);
     user.email.push_str("@foxmail");
     println!("{}", user.email);
+    println!("{}", user.active);
+    println!("{}", user.username);
+    println!("{}", user.sign_in_count);
     println!("{}", "------------build demo end  -------------------");
 }
 

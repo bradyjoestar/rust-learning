@@ -1,4 +1,3 @@
-use complex_language_demo::collection_demo::vec_simple_test;
 use complex_language_demo::enum_demo::Message::ChangeColor;
 
 enum Message {
@@ -10,15 +9,18 @@ enum Message {
 
 pub fn enum_test() {
     println!("{}", "------------enum demo start-------------------");
-    let msgA = Message::Quit;
+    let msg_a = Message::Quit;
 
-    let msgB = Message::Move { x: 10, y: 20 };
+    let msg_b = Message::Move { x: 10, y: 20 };
 
-    let msgC = Message::Write(String::from("enum_test_string"));
+    let msg_c = Message::Write(String::from("enum_test_string"));
 
-    let msgD = ChangeColor(10, 20, 30);
+    let msg_d = ChangeColor(10, 20, 30);
 
-    value_in_msg(msgC);
+    value_in_msg(msg_a);
+    value_in_msg(msg_b);
+    value_in_msg(msg_c);
+    value_in_msg(msg_d);
 }
 
 fn value_in_msg(msg: Message) -> i32 {

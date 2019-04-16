@@ -14,4 +14,6 @@ fn main() {
     complex_ownership_demo::borrow_func_test();
 
     complex_ownership_demo::slice_test();
+
+    complex_ownership_demo::andstr_test();
 }

@@ -39,6 +39,7 @@ pub fn enum_vec_test() {
         SpreadsheetCell::Text(String::from("blue")),
         SpreadsheetCell::Float(10.12),
     ];
+    row.push(SpreadsheetCell::Int(20));
 }
 
 pub fn vec_push_test() {
@@ -49,7 +50,7 @@ pub fn vec_push_test() {
         String::from("green"),
     ];
 
-    let mut s = String::from("yellow");
+    let s = String::from("yellow");
     str_row.push(s); // s has been moved and we can't use it.
 
     //this cause:value used here after move
