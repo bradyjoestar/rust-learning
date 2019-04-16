@@ -1,5 +1,5 @@
-use rustlearn::closure_iterator_demo::iterator_demo;
 use rustlearn::closure_iterator_demo::closure_test;
+use rustlearn::closure_iterator_demo::iterator_demo;
 
 extern crate rustlearn;
 
