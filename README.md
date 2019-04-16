@@ -1,4 +1,4 @@
-# rust-learning
+# rustlearning
 learning sequence:
 - mod_demo
 - macros_demo

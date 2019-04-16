@@ -1,13 +1,13 @@
-use tiwenbin::mod_demo::module3::blah2;
-use tiwenbin::mod_demo::module3::module4;
+use rustlearn::mod_demo::module3::blah2;
+use rustlearn::mod_demo::module3::module4;
 
 #[macro_use]
-extern crate tiwenbin;
+extern crate rustlearn;
 
 fn main() {
     let value = fmt!(500);
     println!("{:?}", value);
-    tiwenbin::lib();
+    rustlearn::lib();
     module4::blah::doit();
     say_hello!();
 

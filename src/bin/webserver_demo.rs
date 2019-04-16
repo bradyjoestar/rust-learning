@@ -1,5 +1,5 @@
 #[macro_use]
-extern crate tiwenbin;
+extern crate rustlearn;
 
 fn main() {
     let value = fmt!(100);

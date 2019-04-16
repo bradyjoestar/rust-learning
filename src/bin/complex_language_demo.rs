@@ -1,5 +1,5 @@
-use tiwenbin::complex_language_demo::trait_simple_demo::Summary;
-use tiwenbin::complex_language_demo::{
+use rustlearn::complex_language_demo::trait_simple_demo::Summary;
+use rustlearn::complex_language_demo::{
     collection_demo, enum_demo, generic_demo, lifetime_complex_demo, lifetime_self_demo,
     lifetime_simple_demo, panic_result_test, struct_simple_demo, trait_complex_demo,
     trait_simple_demo,
@@ -18,7 +18,7 @@ impl Summary for Tweet {
     }
 }
 
-extern crate tiwenbin;
+extern crate rustlearn;
 
 fn main() {
     println!("{}", "complex language demo");

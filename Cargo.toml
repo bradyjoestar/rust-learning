@@ -1,5 +1,5 @@
 [package]
-name = "tiwenbin"
+name = "rustlearn"
 version = "0.1.0"
 authors = ["doug <linderd@iinet.net.au>"]
 
@@ -29,7 +29,7 @@ name = "thread_demo"
 name = "webserver_demo"
 
 [[bin]]
-name = "tiwenbin"
+name = "rustlearn"
 path = "src/main.rs"
 
 [[bin]]

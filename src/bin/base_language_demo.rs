@@ -1,7 +1,7 @@
-use tiwenbin::base_language_demo::{function, tuple_array};
+use rustlearn::base_language_demo::{function, tuple_array};
 
 #[macro_use]
-extern crate tiwenbin;
+extern crate rustlearn;
 
 fn main() {
     let value = fmt!(100);

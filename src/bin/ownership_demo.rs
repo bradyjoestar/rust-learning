@@ -1,7 +1,7 @@
-use tiwenbin::ownership_demo::{complex_ownership_demo, simple_ownership_demo};
+use rustlearn::ownership_demo::{complex_ownership_demo, simple_ownership_demo};
 
 #[macro_use]
-extern crate tiwenbin;
+extern crate rustlearn;
 
 fn main() {
     let value = fmt!(100);
