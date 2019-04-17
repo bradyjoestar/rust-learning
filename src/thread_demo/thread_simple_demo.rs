@@ -13,7 +13,8 @@ pub fn thread_simple_demo1() {
 
     handle.join().unwrap();
 
-    for i in 1..5 { // run in the main thread of caller
+    for i in 1..5 {
+        // run in the main thread of caller
         println!("hi number {} from the main thread!", i);
         thread::sleep(Duration::from_millis(1));
     }
@@ -38,10 +39,10 @@ pub fn thread_simple_demo2() {
 
     handle.join().unwrap();
 
-    println!("{}","thread2 finished")
+    println!("{}", "thread2 finished")
 }
 
-pub fn thread_move_demo3(){
+pub fn thread_move_demo3() {
     println!(
         "{}",
         "----------------------thread_move_demo3 start----------------------"
@@ -55,14 +56,15 @@ pub fn thread_move_demo3(){
     handle.join().unwrap();
 }
 
-pub fn thread_string_demo(){
+pub fn thread_string_demo() {
     println!(
         "{}",
         "----------------------thread_string_demo start----------------------"
     );
     /*
-    这段代码逻辑正确，但是无法通过编译
+    这段代码逻辑不正确，无法通过编译
     这样判断是合理的: 防止一切可能引发的线程安全问题
+    由于A已经被移动进入闭包中
     let a;
     let handle = thread::spawn(move ||{
         a = String::from("wenbin");

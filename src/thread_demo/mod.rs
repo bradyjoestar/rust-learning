@@ -2,6 +2,8 @@ pub mod thread_simple_demo;
 
 pub mod channel;
 
+pub mod mutex_demo;
+
 /*
 将程序中的计算拆分进多个线程可以改善性能，因为程序可以同时进行多个任务，不过这也会增加复杂性。
 因为线程是同时运行的，所以无法预先保证不同线程中的代码的执行顺序。这会导致诸如此类的问题：
@@ -24,4 +26,6 @@ Rust 会拒绝编译不正确的代码并提供解释问题的错误信息。
 同样是对内存进行操作，线程安全考虑的是其中包含数据的安全性，而非内存地址本身的问题。
 
 memory safety: https://en.wikipedia.org/wiki/Memory_safety
+
+
 */

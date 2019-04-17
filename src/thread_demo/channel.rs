@@ -1,8 +1,8 @@
-use std::thread;
 use std::sync::mpsc;
+use std::thread;
 use std::time::Duration;
 
-pub fn thread_channel_test(){
+pub fn thread_channel_test() {
     println!(
         "{}",
         "----------------------thread_channel_test start----------------------"
@@ -22,7 +22,7 @@ pub fn thread_channel_test(){
     println!("Got: {}", received);
 }
 
-pub fn thread_channel_test2(){
+pub fn thread_channel_test2() {
     /*
     let (tx, rx) = mpsc::channel();
 
@@ -45,7 +45,7 @@ pub fn thread_channel_test2(){
     */
 }
 
-pub fn thread_channel_multi_value(){
+pub fn thread_channel_multi_value() {
     println!(
         "{}",
         "----------------------thread_channel_multi_value start----------------------"
@@ -71,7 +71,7 @@ pub fn thread_channel_multi_value(){
     }
 }
 
-pub fn thread_channel_multi_sender(){
+pub fn thread_channel_multi_sender() {
     println!(
         "{}",
         "----------------------thread_channel_multi_sender start----------------------"
