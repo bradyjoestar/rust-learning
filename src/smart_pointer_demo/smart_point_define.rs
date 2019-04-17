@@ -1,3 +1,4 @@
+use std::fmt::Display;
 use std::ops::Deref;
 
 struct MyBox<T>(T);
@@ -16,12 +17,13 @@ impl<T> Deref for MyBox<T> {
     }
 }
 
-pub fn smart_pointer_self_define(){
-    println!("{}", "---------------smart_pointer_self_define start----------------");
+pub fn smart_pointer_self_define() {
+    println!(
+        "{}",
+        "---------------smart_pointer_self_define start----------------"
+    );
 
     let x = 5;
     let y = MyBox::new(x);
-
-    assert_eq!(5, x);
-    assert_eq!(5, *y);
+    println!("my diy smart pointer value = {}", *y);
 }

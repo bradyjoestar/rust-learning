@@ -14,9 +14,9 @@ pub fn iterator_simple_test() {
 
     let mut v2 = vec![1, 2, 3];
     {
-        let mut v2_iter = v2.iter_mut();  //into_iter seems like move
+        let mut v2_iter = v2.iter_mut(); //into_iter seems like move
 
-//    let mut v2_iter = v2.into_iter();  //iter_mut seems like &mut
+        //    let mut v2_iter = v2.into_iter();  //iter_mut seems like &mut
 
         match v2_iter.next() {
             Some(v) => {
@@ -25,15 +25,14 @@ pub fn iterator_simple_test() {
             None => panic!(),
         };
     }
-    println!("{}",v2.get(0).unwrap());
-    println!("v2 length is {}",v2.len());
-
+    println!("{}", v2.get(0).unwrap());
+    println!("v2 length is {}", v2.len());
 
     let mut v3 = vec![1, 2, 3];
     {
-        let mut v3_iter = v3.into_iter();  //into_iter seems like move
+        let mut v3_iter = v3.into_iter(); //into_iter seems like move
 
-//    let mut v2_iter = v2.into_iter();  //iter_mut seems like &mut
+        //    let mut v2_iter = v2.into_iter();  //iter_mut seems like &mut
 
         match v3_iter.next() {
             Some(v) => {
