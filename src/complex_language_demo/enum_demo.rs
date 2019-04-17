@@ -1,4 +1,4 @@
-use complex_language_demo::enum_demo::Message::ChangeColor;
+use crate::complex_language_demo::enum_demo::Message::ChangeColor;
 
 enum Message {
     Quit,

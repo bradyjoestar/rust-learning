@@ -11,6 +11,8 @@ pub fn lifetime_simple_test() {
     lifetime_grammar_one();
 
     lifetime_grammar_two();
+
+    lifetime_grammar_three();
 }
 
 fn lifetime_grammar_one() {

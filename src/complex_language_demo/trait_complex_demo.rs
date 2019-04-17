@@ -22,9 +22,9 @@ pub fn trait_complex_test() {
     notify(tweet);
 }
 
-fn some_function<T: Display + Clone, U: Clone + Copy>(t: T, u: U) -> i32 {
-    1
-}
+//fn some_function<T: Display + Clone, U: Clone + Copy>(_t: T, _u: U) -> i32 {
+//    1
+//}
 
 // another writing style
 //fn some_function(item1:impl Display + Clone,item2:impl Clone + Copy) -> i32{

@@ -92,7 +92,7 @@ pub fn andstr_test() {
 
     let a = 10;
 
-    let c = &a;
+    let _c = &a;
 
     //cannot assign to `a` because it is borrowed
     //assignment to borrowed `a` occurs here

@@ -1,5 +1,3 @@
-use std::hash::Hash;
-
 pub fn box_simple_test() {
     let b = Box::new(5);
     println!("b = {}", b);
@@ -8,7 +6,7 @@ pub fn box_simple_test() {
     b1[0] = 100;
     println!("b1 = {}", b1[0]);
 
-    let mut b2 = Box::new("box_simple_test");
+    let b2 = Box::new("box_simple_test");
     println!("b2 = {}", b2);
 }
 
@@ -20,5 +18,5 @@ enum List {
 use self::List::{Cons, Nil};
 
 pub fn box_recursive_test() {
-    let list = Cons(1, Box::new(Cons(2, Box::new(Cons(3, Box::new(Nil))))));
+    let _list = Cons(1, Box::new(Cons(2, Box::new(Cons(3, Box::new(Nil))))));
 }

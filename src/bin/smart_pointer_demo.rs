@@ -1,11 +1,9 @@
-use rustlearn::smart_pointer_demo::{box_demo, deref_demo, drop_demo, smart_point_define};
+use rustlearn::smart_pointer_demo::{box_demo, deref_demo, drop_demo};
 
 extern crate rustlearn;
 
 fn main() {
     println!("{}", "smart_pointer_demo");
-
-    smart_point_define::smart_pointer_self_define();
 
     box_demo::box_simple_test();
 

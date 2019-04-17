@@ -88,7 +88,8 @@ fn lifetime_grammar_three() {
     );
     let novel = String::from("Call me Ishmael. Some years ago...");
     let novelpart = novel.as_str();
-    let i = ImportantExcerpt { part: novelpart };
+    let _i = ImportantExcerpt { part: novelpart };
+    println!("{}",_i.part)
 }
 
 fn lifetime_grammar_four() {

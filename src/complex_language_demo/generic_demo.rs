@@ -3,11 +3,6 @@ struct Point<T, U> {
     y: U,
 }
 
-struct PointString {
-    //    x: &str, This will cause compile error
-//    y:&str,  This will cause compile error
-}
-
 impl<T, U> Point<T, U> {
     fn mixup<V, W>(self, other: Point<V, W>) -> Point<T, W> {
         Point {
@@ -32,10 +27,10 @@ pub fn generic_struct() {
 
     let mut x = String::from("demo");
     let mut y = String::from("generic");
-    let mut xpointer = &mut x;
-    let mut ypointer = &mut y;
+    let xpointer = &mut x;
+    let ypointer = &mut y;
 
-    let mut string_string = Point {
+    let string_string = Point {
         x: xpointer,
         y: ypointer,
     };

@@ -33,7 +33,13 @@ pub fn closure_complex_test() {
         "------------closure_complex_test start-------------------"
     );
 
-    let closure_test = |str1: &str, str2: &str| -> &str {
+    /*
+    This will cause a error in the future
+    warning: this error has been downgraded to a warning for backwards compatibility with previous releases
+    warning: this represents potential undefined behavior in your code and this warning will become a hard error in the future
+
+
+    let _closure_test = |str1: &str, str2: &str| -> &str {
         if str1.len() > str2.len() {
             str1
         } else {
@@ -41,8 +47,10 @@ pub fn closure_complex_test() {
         }
     };
 
-    let string1 = String::from("closure");
-    let string2 = String::from("demo");
+    let _string1 = String::from("closure");
+    let _string2 = String::from("demo");
+
+    */
 
     /*
     It will meet the following error if we want to use it

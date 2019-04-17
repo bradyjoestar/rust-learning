@@ -17,6 +17,8 @@ pub mod closure_iterator_demo;
 
 pub mod smart_pointer_demo;
 
+pub mod thread_demo;
+
 pub fn lib() {
     say_hello!();
 }
