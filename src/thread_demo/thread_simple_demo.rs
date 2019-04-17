@@ -73,7 +73,6 @@ pub fn thread_string_demo() {
     println!("a value is {}",a);
     */
 
-
     /*
     另外一个例子，这段逻辑是正确的，但是还是通不过编译
     因为rust认为它有未初始化的风险
